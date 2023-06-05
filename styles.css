@@ -1,0 +1,12 @@
+body{
+    display: flex;
+    justify-content: center;
+    background-color: brown;
+}
+canvas {
+    background: black;
+    position: relative;
+
+    width: 800px;
+    height: 600px;
+}
