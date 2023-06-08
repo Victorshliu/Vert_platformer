@@ -1,0 +1,47 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "",
+    "expandedProjectPaths": [
+    ],
+    "fileStates": {
+        "tiledAssets/bg/colored_grass.tsx": {
+            "scaleInDock": 0.1595,
+            "scaleInEditor": 0.36
+        },
+        "untitled folder/spritesheets/smallertiles.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 0.36
+        },
+        "untitled folder/spritesheets/spritesheet_ground.tsx": {
+            "scaleInDock": 0.32,
+            "scaleInEditor": 0.36
+        },
+        "untitled folder/spritesheets/spritesheet_tiles.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        }
+    },
+    "last.imagePath": "/Users/victor/Downloads/Platformer Pack Redux (360 assets)/PNG/Backgrounds",
+    "map.height": 20,
+    "map.tileHeight": 128,
+    "map.tileWidth": 128,
+    "map.width": 5,
+    "openFiles": [
+    ],
+    "project": "untitled.tiled-project",
+    "recentFiles": [
+        "tiledAssets/bg/colored_grass.tsx",
+        "untitled folder/spritesheets/spritesheet_ground.tsx",
+        "untitled folder/spritesheets/smallertiles.tsx",
+        "untitled folder/spritesheets/spritesheet_tiles.tsx"
+    ],
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.tileSize": {
+        "height": 1024,
+        "width": 1024
+    },
+    "tileset.type": 0
+}
