@@ -3,3 +3,9 @@ body{
     justify-content: center;
     background-color: brown;
 }
+
+.test {
+    width: 128px;
+    height: 128px;
+    background-color: bisque;
+}
