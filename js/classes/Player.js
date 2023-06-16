@@ -13,19 +13,38 @@
     // However it is important to be consistent and descriptive with your naming conventions.
 class Player extends Sprite{
     // Contructor for the player
-    constructor({position,collisionBlocks, platformBlocks, imageSrc }) {
-        super({ imageSrc})
+    constructor({
+        position,
+        collisionBlocks,
+        platformBlocks,
+        imageSrc,
+        frameWidth,
+        frameHeight,
+        scale = 0.5,
+        
+    }) {
+        super({ 
+            imageSrc, 
+            frameWidth, 
+            frameHeight,
+            scale
+        })
         this.position = position,
         // velocity is the speed of the player this is used to simulate gravity
         this.velocity = {
-            x: 1,
+            x: 0,
             y: 1,
         }
-        this.height = 256,
-        this.width = 128,
-
         this.collisionBlocks = collisionBlocks
         this.platformBlocks = platformBlocks
+        this.hitbox = {
+            position: {
+                x: this.position.x,
+                y: this.position.y,
+        },
+        width: 128,
+        height: 256,
+    }
     }
     //Player draw method and props
     // child class can override the parent class method so we remove our existing draw method from the player class and use the parent class draw method
@@ -81,7 +100,29 @@ class Player extends Sprite{
             }
         }
     }
+    updateHitBox() {
+        this.hitbox = {
+            position: {
+                x: this.position.x + 50,
+                y: this.position.y,
+            },
+            width:50 ,
+            height: 50,
+        }
+    }
     update() {
+        this.updateFrames()
+        this.updateHitBox()
+
+        ctx.fillStyle = 'rgba(0,255,0,0.5 )'
+        ctx.fillRect(this.position.x, this.position.y, this.width, this.height)
+
+        ctx.fillStyle =  'rgba(255,255,255,1)'
+        ctx.fillRect(
+            this.hitbox.position.x,
+            this.hitbox.position.y, 
+            this.hitbox.width, 
+            this.hitbox.height )
         this.draw()
         this.position.x += this.velocity.x
         this.checkHorCollision()
@@ -89,4 +130,4 @@ class Player extends Sprite{
         this.checkVertCollision()
         
     } 
-}
+} 

@@ -83,14 +83,18 @@ const background = new Sprite({
     // player is initialized with target position
 const player = new Player({
     position: {
-        x: 100,
-        y: 10
+        x: 150,
+        y: 2280
     }, 
     collisionBlocks,
     platformBlocks,
-    imageSrc: 'media/playerSprites/Yellow/idle.png'
+    imageSrc: '../media/playerSprites/players.png',
+    frameWidth:  8,
+    frameHeight: 8,
     
     })
+
+
 // can be used to initialize a second player with different position
 // const player2 = new Player({x: 200, y: 200})
 
